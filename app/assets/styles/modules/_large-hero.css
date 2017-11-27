@@ -15,15 +15,42 @@
   &__title {
     font-weight: 300;
     color:$mainBlue;
-    font-size:4.8rem;
     margin:0;
+    font-size:1.1rem;
+
+    /*@media (min-width:530px){
+      font-size:4.8rem;
+    }*/ /*using mixins instead*/
+
+    @mixin atSmall {
+      font-size: 2rem;
+    }
+
+    @mixin atMedium{
+      font-size: 3.2rem;
+    }
+
+    @mixin atLarge{
+      font-size: 4.8rem;
+    }
+
   }
 
   &__subtitle{
     font-weight: 300;
     color:$mainBlue;
-    font-size:2.9rem;
+    font-size:1.1rem;
     margin:0;
+
+    @mixin atSmall {
+      font-size:1.9rem;
+    }
+    @mixin atMedium {
+      font-size:2.5rem;
+    }
+    @mixin atLarge {
+      font-size:3.2rem;
+    }
   }
 
   &__description{
