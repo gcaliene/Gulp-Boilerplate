@@ -1,0 +1,39 @@
+/*_ or underscore indicates a partial file, like this would be imported */
+
+.large-hero{
+  position:relative;
+
+  &__text-content {
+    position: absolute;
+    top:40%;
+    transform:translateY(-50%);
+    left:0;
+    width:100%;
+    text-align:center;
+  }
+
+  &__title {
+    font-weight: 300;
+    color:$mainBlue;
+    font-size:4.8rem;
+    margin:0;
+  }
+
+  &__subtitle{
+    font-weight: 300;
+    color:$mainBlue;
+    font-size:2.9rem;
+    margin:0;
+  }
+
+  &__description{
+    color:#fff;
+    font-size:1.875rem;
+    font-weight:100;
+    text-shadow:2px 2px 0 rgba(0, 0, 0, .10);
+    max-width:30rem;
+    /*margin:auto;*/
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
