@@ -357,6 +357,7 @@ template {
 [hidden] {
   display: none;
 }
+/*variable come before the global line, so that it can define the variable we use*/
 body {
   font-family: 'Roboto', sans-serif;
   color:#333;
@@ -368,6 +369,9 @@ img {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; /*necessary so that the calculated width values are honored*/
+}
+a  {
+  color: #d59541;
 }
 /*_ or underscore indicates a partial file, like this would be imported */
 .large-hero{
@@ -553,6 +557,9 @@ img {
 .headline--b-margin-large {
     margin-bottom: 1.6em;
   }
+.headline--no-t-margin {
+    margin-top:0;
+  }
 .row::after{/* this is used to clear the floats*/
     content:"";
     clear:both;
@@ -566,7 +573,16 @@ img {
     padding-right: 65px;
     /*box-sizing: border-box; /*necessary so that the calculated width values are honored. this is going globally*/
   }
+.row__b-margin-until-medium{
+    margin-bottom:1rem;
+  }
 @media(min-width:800px){
+
+    .row__b-margin-until-medium{
+      margin-bottom:0;
+
+    }
+
     .row__medium-4 {
       float: left;
       width: 33.33%;
@@ -584,4 +600,18 @@ img {
     .row__medium-8--smaller {
       width:63%;
     }
+  }
+.generic-content-container p {
+    line-height: 1.65;
+    margin:1.8rem 0;
+
+  }
+@media(min-width:530px){
+.generic-content-container p {
+      font-size: 1.125rem
+
+  }
+  }
+.generic-content-container p a { /*any links within a paragraph*/
+    font-weight: 700;
   }

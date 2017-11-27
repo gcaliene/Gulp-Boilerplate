@@ -11,3 +11,7 @@ img {
 * {
   box-sizing: border-box; /*necessary so that the calculated width values are honored*/
 }
+
+a  {
+  color: $mainOrange;
+}
