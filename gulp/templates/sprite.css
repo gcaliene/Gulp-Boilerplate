@@ -1,0 +1,20 @@
+/* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
+Instead edit gulp/templates.sprite*/
+
+
+
+{{#shapes}}
+  {{#first}}
+    .icon {
+      /*background-image: url('/temp/sprite/css/{{{sprite}}}'); /*triple mustasche because it can contain a forward slash and then escape*/
+      /*not goign to use the above image because we are copying the image from temp to the line below*/
+      background-image: url('/assets/images/sprites/{{{sprite}}}');
+    }
+  {{/first}}
+
+  .icon--{{base}}{
+    width: {{width.outer}}px ;
+    height: {{height.outer}}px;
+    background-position: {{position.relative.xy}};
+  }
+{{/shapes}}
