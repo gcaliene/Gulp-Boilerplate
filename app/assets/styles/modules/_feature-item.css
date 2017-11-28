@@ -28,7 +28,7 @@
     margin-top:.7em;
     margin-bottom: .8rem; /*this matches the design*/
     text-align: center;
-
+    
     @mixin atSmall{
       margin-top: 1em;
       font-size: 1.875rem;
