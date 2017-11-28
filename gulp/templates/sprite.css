@@ -1,0 +1,8 @@
+{{#shapes}}
+  .icon--{{base}}{
+    width: {{width.outer}}px ;
+    height: {{height.outer}}px;
+    background-image: url('/temp/sprite/css/{{{sprite}}}'); /*triple mustasche because it can contain a forward slash and then escape*/
+    background-position: {{position.relative.xy}};
+  }
+{{/shapes}}
