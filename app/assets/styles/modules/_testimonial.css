@@ -1,0 +1,41 @@
+.testimonial {
+  background-color: rgba(255,255,255, .5);
+  padding:0 18px 1px  18px;
+  margin-bottom: 98px;
+
+  @mixin atLarge {
+    padding:0 1.8125rem 1px  1.8125rem;
+    margin-bottom: 0;
+  }
+
+  &__photo {
+    border-radius: 80px; /* this is how we get rounded edges*/
+    overflow:hidden; /* without this the picture will take up all the space in the container div*/
+    width:160px; /*this is to get the container div to match the picture width*/
+    height:160px;
+    margin: 0 auto -80px auto; /*bottom margin is -80 because the picture is moved up 80*/
+    position:relative;
+    top:-80px; /*as far as the text below is concerned, the picture is still in the same spot */
+    border:6px solid rgba(255,255,255, .5);
+  }
+
+  &__title{
+    color:$mainBlue;
+    text-align: center;
+    font-size: 1.5rem; /*remember that 16 is default and font goal size is 24 so math it up*/
+    font-weight: 500;
+    margin:0;
+  }
+
+  &__subtitle{
+    color:$mainOrange;
+    text-align: center;
+    font-weight: 400;
+    font-size: .9375rem;
+    margin:.25rem 0 1rem 0;
+  }
+
+  &--last {
+    margin-bottom:0; /*to get rid of the bottom padding for mobile*/
+  }
+}

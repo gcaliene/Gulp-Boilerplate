@@ -11,6 +11,10 @@
     font-weight: 500;
   }
 
+  &--blue{
+    color:$mainBlue
+  }
+
   &__icon {
     display: block; /*will drop the text after it onto a new line*/
     margin-left: auto;
@@ -18,6 +22,8 @@
     margin-bottom: .6rem;
 
     @mixin atSmall {
+      position: relative;
+      top: 10px;
       margin-right: .5rem;
       margin-left: 0;
       display: inline-block; /* so that on larger screens it won't drop the text onto a new line*/
