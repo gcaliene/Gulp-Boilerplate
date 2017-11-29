@@ -10,7 +10,12 @@
   }
 
   @mixin atMedium {
-    background-color: rgba($mainBlue, .3);
+    position: fixed; /*to stay on the top as you scroll down*/
+    background-color: rgba($mainBlue, .3)!important;
+
+    &--dark {
+      background-color: rgba(23, 51, 72, .85);
+    }
   }
 
   &__button-container {
@@ -32,6 +37,12 @@
     @mixin atMedium {
       left:auto;
       transform:translateX(0);
+      transition: transform .3s ease-out;
+
+      .site-header--dark & {
+        transform:scale(.56);
+        transition: transform .3s ease-in;
+      }
     }
   }
 
