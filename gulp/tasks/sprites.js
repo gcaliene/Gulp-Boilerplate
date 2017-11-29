@@ -5,6 +5,11 @@ const del = require('del');
 const svg2png = require('gulp-svg2png');
 
 var config = {  //it needs to an object literal
+  shape:{
+    spacing: {
+      padding:1
+    }
+  },
   mode: {
     css:{
       sprite:'sprite.svg', //needed to get rid of the .css in modules/_sprite
