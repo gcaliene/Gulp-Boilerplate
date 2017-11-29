@@ -926,4 +926,12 @@ Instead edit gulp/templates.sprite*/
 .site-header {
   position: absolute;
   z-index: 2;
+  background-color: rgba(47,85,114, .3);
+  width:100%;
+}
+.site-header__button-container {
+    float:right;
+  }
+.primary-nav {
+  
 }
