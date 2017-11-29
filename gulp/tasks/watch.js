@@ -4,7 +4,7 @@ const browserSync = require('browser-sync').create();
 
 gulp.task('watch', function(){
   browserSync.init({
-    // notify:false, //i like the notification
+    notify:false, //i like the notification
     server: {
       baseDir: "app"
     }
@@ -15,11 +15,19 @@ gulp.task('watch', function(){
   watch('./app/assets/styles/**/*.css', function(){
     // gulp.start('styles');
     gulp.start('cssInject');
-  })
+  });
+
+  watch('./app/assets/scripts/**/*.js', function(){
+    gulp.start('scriptsRefresh');
+  });
 });
 
 //ccsInject task won't begin until the styles task is complete
 gulp.task('cssInject', ['styles'], function(){
   return gulp.src('./app/temp/styles/styles.css') //remember src is an async function so be sure to use return
     .pipe(browserSync.stream());
+});
+
+gulp.task('scriptsRefresh', ['scripts'], function(){
+  browserSync.reload();
 });
