@@ -8,7 +8,7 @@ Instead edit gulp/templates.sprite*/
     .icon {
       /*background-image: url('/temp/sprite/css/{{{sprite}}}'); /*triple mustasche because it can contain a forward slash and then escape*/
       /*not goign to use the above image because we are copying the image from temp to the line below*/
-      background-image: url('/assets/images/sprites/{{{sprite}}}');
+      background-image: url('../../assets/images/sprites/{{{sprite}}}');
     }
   {{/first}}
 

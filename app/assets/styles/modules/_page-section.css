@@ -31,7 +31,7 @@
 
     @mixin atLarge{
       &.lazyloaded{
-        background: url('/assets/images/testimonials-bg.jpg') center top  no-repeat;
+        background: url('../../assets/images/testimonials-bg.jpg') center top  no-repeat;
         background-size: cover;
       }
 

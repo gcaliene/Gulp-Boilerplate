@@ -564,7 +564,7 @@ a  {
   }
 @media(min-width:1010px){
       .page-section--testimonials.lazyloaded{
-        background: url('/assets/images/testimonials-bg.jpg') center top  no-repeat;
+        background: url('../../assets/images/testimonials-bg.jpg') center top  no-repeat;
         background-size: cover;
       }
   }
@@ -852,7 +852,7 @@ Instead edit gulp/templates.sprite*/
 .icon {
       /*background-image: url('/temp/sprite/css/sprite-e79e95cc.svg'); /*triple mustasche because it can contain a forward slash and then escape*/
       /*not goign to use the above image because we are copying the image from temp to the line below*/
-      background-image: url('/assets/images/sprites/sprite-e79e95cc.svg');
+      background-image: url('../../assets/images/sprites/sprite-e79e95cc.svg');
     }
 .icon--clear-view-escapes{
     width: 144.4px ;
